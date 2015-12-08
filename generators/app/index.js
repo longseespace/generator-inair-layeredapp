@@ -33,7 +33,7 @@ var AndroidGradleGenerator = yeoman.generators.Base.extend({
     this.prompt(prompts, function (props) {
       this.appName = props.appName;
       this.packageName = props.packageName;
-      this.layerNum = props.layerNum
+      this.layerNum = props.layerNum;
 
       if (this.packageName !== undefined) {
         this.packageFolder = this.packageName.replace(/\./g, '/');
