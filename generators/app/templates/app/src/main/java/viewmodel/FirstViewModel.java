@@ -1,11 +1,10 @@
 package <%=packageName%>.viewmodel;
 
 import inair.app.IAContext;
-import inair.data.ItemViewData;
 import inair.data.LayeredItemViewData;
 import inair.data.ViewModel;
 
-public class FirstViewModel extends ViewModel implements LayeredItemViewData, ItemViewData {
+public class FirstViewModel extends ViewModel implements LayeredItemViewData {
 
   private CharSequence mTitle = "First Layer";
 
@@ -28,16 +27,4 @@ public class FirstViewModel extends ViewModel implements LayeredItemViewData, It
     return true;
   }
 
-  @Override
-  public CharSequence getTag() {
-    return "firstlayer";
-  }
-
-  @Override
-  public void setUp() {
-  }
-
-  @Override
-  public void tearDown() {
-  }
 }

@@ -5,11 +5,10 @@ import android.graphics.drawable.Drawable;
 import <%=packageName%>.R;
 
 import inair.app.IAContext;
-import inair.data.ItemViewData;
 import inair.data.LayeredItemViewData;
 import inair.data.ViewModel;
 
-public class SecondViewModel extends ViewModel implements LayeredItemViewData, ItemViewData {
+public class SecondViewModel extends ViewModel implements LayeredItemViewData {
   private CharSequence mTitle = "Second Layer";
   private String mBindingText = "InAiR - This is the second layer screen";
   private int mBindingImage = R.drawable.logo2d3d;
@@ -49,18 +48,5 @@ public class SecondViewModel extends ViewModel implements LayeredItemViewData, I
   @Override
   public boolean getShouldOpen() {
     return true;
-  }
-
-  @Override
-  public CharSequence getTag() {
-    return "secondlayer";
-  }
-
-  @Override
-  public void setUp() {
-  }
-
-  @Override
-  public void tearDown() {
   }
 }
